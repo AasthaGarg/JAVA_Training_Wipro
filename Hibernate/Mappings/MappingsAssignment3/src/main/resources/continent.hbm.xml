@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class table="Continents" name="com.bean.Continent">
+
+<meta attribute="class-description">This class represent Continent type object. </meta>
+
+
+<id name="id" type="int" column="id">
+
+<generator class="assigned"/>
+
+</id>
+
+<property name="cname" type="string" column="cname"/>
+
+
+<map table="Countries" name="countries" cascade="all">
+
+<key column="cid"/>
+
+<index type="string" column="Country"/>
+
+<element type="string" column="Capital"/>
+
+</map>
+
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+  <class name="com.bean.Employee" table="Employee">  
+          <id name="id">  
+          <generator class="increment"></generator>  
+          </id>  
+          <property name="name"></property>  
+          <list name="cars" cascade="all">  
+          <key column="cid"></key>  
+          <index column="type"></index>  
+          <one-to-many class="com.bean.Car"/>  
+          </list>  
+            
+          </class>  
+            
+          <class name="com.bean.Passport" table="Passport">  
+          <id name="id">  
+          <generator class="increment"></generator>  
+          </id>  
+          <property name="regno"></property>
+          <property name="model"></property>  
+          <property name="color"></property>
+          <property name="manufacturer"></property>  
+          </class> 
+</hibernate-mapping>

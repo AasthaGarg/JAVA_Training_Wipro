@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <bean id = "countryBean1" class = "com.bean.Country">
+      <property name="countryId" value="C001"></property>
+      <property name="countryName" value="India"></property>
+   </bean>
+   <bean id = "countryBean2" class = "com.bean.Country">
+      <property name="countryId" value="C002"></property>
+      <property name="countryName" value="Pakistan"></property>
+   </bean>
+   <bean id = "PlayerBean1" class = "com.bean.Player">
+      <property name="playerId" value="P001"></property>
+      <property name="playerName" value="Sachin"></property>
+      <property name="country" ref="countryBean1"></property>
+   </bean>
+   <bean id = "PlayerBean2" class = "com.bean.Player">
+      <property name="playerId" value="P002"></property>
+      <property name="playerName" value="Dhoni"></property>
+      <property name="country" ref="countryBean1"></property>
+   </bean>
+   <bean id = "PlayerBean3" class = "com.bean.Player">
+      <property name="playerId" value="P003"></property>
+      <property name="playerName" value="Babar"></property>
+      <property name="country" ref="countryBean2"></property>
+   </bean>
+   <bean id = "PlayerBean4" class = "com.bean.Player">
+      <property name="playerId" value="P004"></property>
+      <property name="playerName" value="Abbas"></property>
+      <property name="country" ref="countryBean2"></property>
+   </bean>
+   <bean id = "PlayerBean5" class = "com.bean.Player">
+      <property name="playerId" value="P005"></property>
+      <property name="playerName" value="Shadab"></property>
+      <property name="country" ref="countryBean2"></property>
+   </bean>
+   
+</beans>

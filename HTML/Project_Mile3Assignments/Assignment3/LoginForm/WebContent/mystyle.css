@@ -1,0 +1,27 @@
+#loginForm{
+	margin-left:40%;
+	margin-top:5%;
+	text-align:center;
+	border:1px solid black;
+	width:300px;
+}
+#registerForm{
+	margin-left:40%;
+	margin-top:5%;
+	text-align:center;
+	border:1px solid black;
+	width:350px;
+}
+#changePwdForm{
+	margin-left:40%;
+	margin-top:5%;
+	text-align:center;
+	border:1px solid black;
+	width:350px;
+}
+input{
+	margin:3px;
+}
+#register{
+	padding-right:10px;
+}

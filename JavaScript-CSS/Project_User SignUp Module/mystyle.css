@@ -1,0 +1,37 @@
+body{
+	background-color:purple;
+}
+form{
+	
+	padding-left:35%;
+	padding-top:5%;
+}
+table{
+	background-color:grey;
+	padding:20px;
+}
+#span2{
+	padding-left:45%;
+	color:white;
+	
+}
+#span1{
+	float:right;
+	color:white;
+}
+
+input[type=text]:focus{
+	color:white;
+	background-color:lightgrey;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+input[type=submit]{
+	position:absolute;
+	margin-left:15%;
+	margin-top:3%;
+}
+input[type=submit]:hover{
+	background-color:grey;
+	color:white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}

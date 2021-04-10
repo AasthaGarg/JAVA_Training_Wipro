@@ -1,0 +1,1 @@
+select last_name,hire_date from employees where hire_date BETWEEN '31-DEC-93' AND '01-JAN-95';

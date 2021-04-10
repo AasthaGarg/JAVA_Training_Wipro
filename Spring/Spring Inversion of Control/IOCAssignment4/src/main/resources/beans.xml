@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <bean id = "testBean1" class = "com.bean.Test">
+      <property name="testId" value="T001"></property>
+      <property name="testTitle" value="Core Java Test"></property>
+      <property name="testMarks" value="80"></property>
+   </bean>
+   <bean id = "studentBean1" class = "com.bean.Student">
+      <property name="studentId" value="S001"></property>
+      <property name="studentName" value="Steve"></property>
+      <property name="studentTest" ref="testBean1"></property>
+   </bean>
+    <bean id = "testBean2" class = "com.bean.Test">
+      <property name="testId" value="T002"></property>
+      <property name="testTitle" value="Oracle Test"></property>
+      <property name="testMarks" value="83"></property>
+   </bean>
+   <bean id = "studentBean2" class = "com.bean.Student">
+      <property name="studentId" value="S002"></property>
+      <property name="studentName" value="Jobh"></property>
+      <property name="studentTest" ref="testBean2"></property>
+   </bean>
+   
+</beans>

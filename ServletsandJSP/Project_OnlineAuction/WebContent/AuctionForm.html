@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="AuctionFormStyle.css">
+<script type="text/javascript" src="AuctionFormScript.js"></script>
+<title>Insert title here</title>
+
+</head>
+<body>
+<form name="myform1" id="myform1" method="get" onclick=" return validation()" action="AuctionServlet">
+<h2>Welcome to AP Auctions. Please Enter Bid.</h2>
+<h3><span id="miss1"></span><span id="msg"></span><br/></h3>
+<span id="miss2"></span>Item ID:<input type="number" name="iid" onblur="validation()" /><br/>
+<span id="miss3"></span>Item Name:<input type="text" name="iname" onblur="validation()"/><br/>
+<span id="miss4"></span>Your Name:<input type="text" name="uname" onblur="validation()"/><br/>
+<span id="miss5"></span>Your Email Address:<input type="text" name="email" onblur="validation()"/><br/>
+<span id="miss6"></span>Amount Bid:<input type="number" name="amount" onblur="validation()"/><br/>
+Auto-increment bid to match other bidders?:<input type="checkbox" name="bid" onblur="validation()"/><br/>
+<button type="submit" value="Submit Bid" >Submit Bid</button>
+</form>
+</body>
+</html>
